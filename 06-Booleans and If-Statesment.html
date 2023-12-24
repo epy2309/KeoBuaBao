@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>  
+    <title>Booleans </title>
+  <body>
+   Rock Paper Scissors 
+   <br><br>
+    <button onclick="
+      let randomNumber = Math.floor(Math.random()*3);
+      let computerMove ='';
+      let result ='';
+      if(randomNumber === 0){
+        computerMove = 'rock';
+        result = 'Tie.';
+        
+      }else if(randomNumber===1){
+        computerMove = 'paper';
+        result = 'You lose.';
+      }else if(randomNumber===2) {
+        computerMove = 'scissors';
+        result='You win';
+      } 
+      alert(`You picked rock. Computer picked ${computerMove}.${result}`);
+      "
+      >Rock</button>
+    <button onclick="
+       randomNumber = Math.floor(Math.random()*3);
+       computerMove ='';
+       result ='';
+      if(randomNumber === 0){
+        computerMove = 'rock';
+        result = 'You win.';
+        
+      }else if(randomNumber===1){
+        computerMove = 'paper';
+        result = 'Tie.';
+      }else {
+        computerMove = 'scissors';
+        result='You lose.';
+      } 
+      alert(`You picked paper. Computer picked ${computerMove}.${result}`);
+      ">Paper</button>
+    <button onclick="
+       randomNumber = Math.floor(Math.random()*3);
+       computerMove ='';
+       result ='';
+      if(randomNumber === 0){
+        computerMove = 'rock';
+        result = 'You lose.';
+        
+      }else if(randomNumber===1){
+        computerMove = 'paper';
+        result = 'You win.';
+      }else {
+        computerMove = 'scissors';
+        result='Tie.';
+      } 
+      alert(`You picked scissors. Computer picked ${computerMove}.${result}`);
+      ">Scissors</button>
+   <script>
+    
+   </script>   
+  </body>
+</head>
+</html>
